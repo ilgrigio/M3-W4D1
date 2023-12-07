@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
@@ -13,10 +17,11 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="bg-dark">
-    
+    <!-- CONTAINER -->
+    <div class="container-fluid px-4">
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid mx-2 px-3">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
               src="./assets/imgs/Netflix_Logo_RGB.png "
@@ -55,28 +60,11 @@
                 <a class="nav-link" href="#">My List</a>
               </li>
               <!-- Dropdown -->
-              <!-- <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li> -->
             </ul>
           </div>
-          <div class="search__user d-flex align-items-center">
-            <input type="text" role="search" /><i class="bi bi-search"></i>
+          <div class="search__user d-flex align-items-center gap-3">
+            <input type="text" role="search" />
+            <i class="bi bi-search"></i>
             <span>KIDS</span>
             <i class="bi bi-bell-fill"></i>
             <ul class="navbar-nav">
@@ -90,9 +78,7 @@
                 >
                   <img src="./user.png" class="user" alt="" />
                 </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
-                >
+                <ul class="dropdown-menu dropdown-menu-end">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li>
@@ -104,13 +90,576 @@
           </div>
         </div>
       </nav>
-      <div class="container m-3 p-3">
       <!-- FINE NAVBAR -->
-      <section class="row">
-        <h1>TV Shows</h1>
+      <section class="header mx-2">
+        <div class="title__genres container">
+          <h1>TV Shows</h1>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Genres</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="layout d-flex">
+          <i class="bi bi-list"></i>
+          <i class="bi bi-grid-fill"></i>
+        </div>
+      </section>
+      <!-- Vetrina inizio caroselli -->
+      <section class="showCase mx-2 pt-3">
+        <h3>Trending Now</h3>
+        <!-- CAROSELLO 1 -->
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <!-- PRIMA SLIDE 6 IMG -->
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-md-6 row-cols-sm-3 g-2">
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/2.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/1.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/3.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/4.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/5.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/6.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SECONDA SLIDE 6 IMG -->
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-6 row-cols-sm-3 g-2">
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/7.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/8.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/9.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/10.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/11.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/12.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TERZA SLIDE 6 IMG -->
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-6 row-cols-sm-3 g-2">
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/13.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/14.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/15.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/16.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/17.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/18.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="space mt-5"></div>
+
+        <!-- CAROSELLO 2 -->
+        <h3>Watch It Again</h3>
+        <div id="carouselExample_2" class="carousel slide">
+          <div class="carousel-inner">
+            <!-- PRIMA SLIDE 6 IMG -->
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-md-6 row-cols-sm-3 g-2">
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/3.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/14.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/15.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/11.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/18.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/16.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SECONDA SLIDE 6 IMG -->
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-6 row-cols-sm-3 g-2">
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/7.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/8.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/9.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/10.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/4.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/5.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample_2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample_2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="space mt-5"></div>
+
+        <!-- CAROSELLO 3 -->
+        <h3>New Releases</h3>
+        <div id="carouselExample_3" class="carousel slide">
+          <div class="carousel-inner">
+            <!-- PRIMA SLIDE 6 IMG -->
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-md-6 row-cols-sm-3 g-2">
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/12.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/2.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/11.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/3.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/1.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/10.png"
+                      class="card-img-top"
+                      alt="AfterLife"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SECONDA SLIDE 6 IMG -->
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-6 row-cols-sm-3 g-2">
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/13.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/14.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/7.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/8.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/17.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="movie__card">
+                    <img
+                      src="./assets/imgs/movies/18.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample_3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample_3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </section>
     </div>
-</div>
+    <footer class="container p-5 mt-5">
+      <div class="icon__flex d-flex gap-3">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-youtube"></i>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 py-3">
+        <div class="col-12 col-md-3 col-sm-6">
+          <p>Audio and Subtitles</p>
+          <p>Media Center</p>
+          <p>Privacy</p>
+          <p>Contact Us</p>
+          <button class="service mt-3">Service Code</button>
+        </div>
+        <div class="col-12 col-md-3 col-sm-6">
+          <p>Audio Description</p>
+          <p>Investor Relations</p>
+          <p>Legal Notices</p>
+        </div>
+        <div class="col-12 col-md-3 col-sm-6">
+          <p>Help Center</p>
+          <p>Jobs</p>
+          <p>Cookies Preferences</p>
+        </div>
+        <div class="col-12 col-md-3 col-sm-6">
+          <p>Gift Cards</p>
+          <p>Terms of Use</p>
+          <p>Corporate Information</p>
+        </div>
+      </div>
+      <p>© 1997-2019 Netflix, Inc {i-0d00fcda2fdf9c0de}</p>
+    </footer>
+    <!--  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

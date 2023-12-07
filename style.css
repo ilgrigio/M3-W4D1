@@ -119,3 +119,8 @@ button.service {
   transition-delay: 0.3s;
   cursor: pointer;
 }
+
+.navbar-toggler {
+  background-color: #db0a14;
+  opacity: 0.8;
+}

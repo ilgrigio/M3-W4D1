@@ -5,11 +5,13 @@
 
 body {
   box-sizing: border-box;
+  background-color: #141414;
   color: white;
 }
 
 h3 {
   font-size: x-large;
+  margin-block-end: 10px;
 }
 
 /* .container {
@@ -20,9 +22,9 @@ h3 {
   padding: 0;
 }
 
-.navbar .navbar-expand-lg {
-  /* background-color: black !important; */
-}
+/* .navbar .navbar-expand-lg {
+  /* background-color: black !important; 
+} */
 
 .navbar-nav .nav-item .nav-link {
   color: white;
@@ -89,8 +91,31 @@ h3 {
 
 footer .bi {
   font-size: 1.5em;
+  color: #6d6d6d;
 }
 
 footer p {
   font-size: x-small;
+  color: #6d6d6d;
+}
+
+button.service {
+  background: none;
+  color: #6d6d6d !important;
+  border: 1px solid #6d6d6d;
+}
+
+/* CARD SCALE */
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-inner .movie__card {
+  transition: 0.3s;
+}
+
+.carousel-inner .movie__card:hover {
+  transform: scale(1.5, 1.5);
+  transition-delay: 0.3s;
+  cursor: pointer;
 }

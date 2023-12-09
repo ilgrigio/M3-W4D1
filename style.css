@@ -119,3 +119,21 @@ button.service {
   transition-delay: 0.3s;
   cursor: pointer;
 }
+
+.bi.bi-search {
+  cursor: pointer;
+}
+
+input {
+  width: 0;
+  opacity: 0;
+  transition: ease-in-out 1s;
+  /* transition-delay: 0.5s; */
+  /* transition-timing-function: linear; */
+}
+
+.show {
+  width: 100%;
+  opacity: 1 !important;
+  transition-delay: 0.5;
+}

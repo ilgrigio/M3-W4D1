@@ -6,3 +6,11 @@ iconButton.onclick = function () {
     textInput.classList.toggle("show");
   }
 };
+
+// const contentShow = function () {
+//   if (window.onscroll)
+// };
+
+// window.onscroll = () => {
+//   console.log("Window Scrolling!!");
+// };

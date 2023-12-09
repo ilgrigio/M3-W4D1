@@ -137,3 +137,8 @@ input {
   opacity: 1 !important;
   transition-delay: 0.5;
 }
+
+button.navbar-toggler {
+  background-color: #db0a14;
+  opacity: 0.8;
+}

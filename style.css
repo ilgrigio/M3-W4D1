@@ -89,20 +89,26 @@ h3 {
   width: 100%;
 }
 
+footer {
+  color: #6d6d6d;
+}
+
 footer .bi {
   font-size: 1.5em;
-  color: #6d6d6d;
+  /* color: #6d6d6d; */
 }
 
 footer p {
   font-size: x-small;
-  color: #6d6d6d;
+  /* color: #6d6d6d; */
 }
 
 button.service {
   background: none;
   color: #6d6d6d !important;
   border: 1px solid #6d6d6d;
+  font-size: small;
+  padding: 5px;
 }
 
 /* CARD SCALE */
@@ -120,6 +126,7 @@ button.service {
   cursor: pointer;
 }
 
+/*  SEARCHBAR VISIBLE TRANSITION */
 .bi.bi-search {
   cursor: pointer;
 }
